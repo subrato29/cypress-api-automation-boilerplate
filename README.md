@@ -15,11 +15,11 @@ Framework built on
 
 ```
 
-Cypress (version >= 6.x)
+Cypress
 
-mocha
+mocha (Cypress automatically provided)
 
-chai
+chai (Cypress automatically provided)
 
 node.js
 
