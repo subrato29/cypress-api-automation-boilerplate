@@ -1,0 +1,6 @@
+{
+    "name" :  "Testing API by Cypress12",
+    "gender" : "female",
+    "email" : "test@email.com",
+    "status" : "active" 
+}

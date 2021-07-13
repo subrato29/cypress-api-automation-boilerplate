@@ -1,7 +1,7 @@
 /// <reference types = "Cypress" />
 
 describe('GET api user tests', () => {
-    const BEARER_TOKEN = 'c3146902534dc60968efdab3a95f09cddc07ace1e1708115f6762cc63d844718';
+    const BEARER_TOKEN = 'a67595542e465e56728c1499c323bc2acd1dbbfdbae9e1f53419729e00a1bd38';
     it('get users', () => {
         cy.request({
             method : 'GET',
