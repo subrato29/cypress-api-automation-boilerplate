@@ -15,6 +15,7 @@ describe('POST user request', () => {
        return result;
     }
     it('create user test', () => {
+        //1. POST user
         cy.request({
             method : 'POST',
             url : 'https://gorest.co.in/public/v1/users',
@@ -28,12 +29,29 @@ describe('POST user request', () => {
                 "status" : payload.status 
             }
         }).then((res) => {
-            cy.log(JSON.stringify(res));
+            //cy.log(JSON.stringify(res));
             expect(res.status).to.eq(201);
             expect(res.body.data).has.property('name', payload.name);
             expect(res.body.data).has.property('email', email);
             expect(res.body.data).has.property('gender', payload.gender);
             expect(res.body.data).has.property('status', payload.status);
+        }).then((res) => {
+            const userID = res.body.data.id;
+            cy.log(userID);
+            //2. GET user
+            cy.request({
+                method : 'GET',
+                url : 'https://gorest.co.in/public-api/users/' + userID,
+                header : {
+                    'authorization' : 'Bearer ' + BEARER_TOKEN
+                }
+            }).then((res) => {
+                expect(res.status).to.eq(200);
+                expect(res.body.data).has.property('id', userID);
+                expect(res.body.data).has.property('name', payload.name);
+                expect(res.body.data).has.property('status', payload.status);
+                expect(res.body.data).has.property('email', email);
+            })
         })
     })
 });
