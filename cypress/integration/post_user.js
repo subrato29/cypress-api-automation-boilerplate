@@ -1,6 +1,6 @@
 /// <reference types = 'Cypress'/>
 
-const payload = require('../../../fixtures/payload');
+const payload = require('../fixtures/payload');
 
 describe('POST user request', () => {
     const BEARER_TOKEN = 'a67595542e465e56728c1499c323bc2acd1dbbfdbae9e1f53419729e00a1bd38';
