@@ -42,6 +42,10 @@ npm install
 
 Opening Cypress: npx cypress open
 
+Write your tests in 'integration' folder
+
+Place your test data in 'fixtures' folder
+
 ```
 
 Running the tests:
