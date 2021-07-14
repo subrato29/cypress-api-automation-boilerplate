@@ -2,11 +2,14 @@ Author: Subrato Sarkar
 ------------------------------
 
 ```
-This is a Cycpress framework to test API
+This is a Cypress framework to test API
 
 cypress-api-automation-boilerplate
 
 Documentation: https://docs.cypress.io/guides/getting-started/installing-cypress#Continuous-integration
+
+AUT1: https://gorest.co.in/rest-console
+AUT: https://www.metaweather.com/api/
 
 ````
 
@@ -44,6 +47,6 @@ Opening Cypress: npx cypress open
 Running the tests:
 -------------------
 ```
-
+npx cypress open
 
 ```
