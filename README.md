@@ -9,7 +9,7 @@ cypress-api-automation-boilerplate
 Documentation: https://docs.cypress.io/guides/getting-started/installing-cypress#Continuous-integration
 
 AUT1: https://gorest.co.in/rest-console
-AUT: https://www.metaweather.com/api/
+AUT2: https://www.metaweather.com/api/
 
 ````
 
